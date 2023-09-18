@@ -1,0 +1,513 @@
+@import url(fonts.css);
+
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+  width: 100%;
+  font-family: Open Sans;
+  text-decoration: none;
+  flex-direction: row;
+  color: white;
+  background-repeat: no-repeat;
+}
+
+h1 {
+  font-size: xxx-large;
+  font-weight: 900;
+}
+
+h2 {
+  font-size: xx-large;
+  font-weight: 900;
+}
+
+h3 {
+  font-size: x-large;
+  font-weight: bold;
+}
+
+button {
+  width: max-content;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+body {
+  max-width: 1440px;
+}
+
+#header {
+  background-image: url(images/headerbg.png);
+  padding: 30px 0px 0px 30px;
+  height: 190px;
+  display: flex;
+  flex-direction: row;
+}
+
+/* Create columns that floats next to each other */
+#logo {
+  width: 30%;
+  text-align: center;
+  height: min-content;
+}
+
+#logo img {
+  width: 50%;
+}
+
+#nav {
+  margin-left: 20%;
+  height: min-content;
+}
+
+/* Add a black background color to the top navigation bar */
+#main-menu {
+  display: flex;
+  float: right;
+  max-height: min-content;
+  font-size: 90%;
+  font-weight: bold;
+}
+
+/* Style the links inside the navigation bar */
+#main-menu a {
+  color: black;
+  text-align: center;
+  width: fit-content;
+  padding: 3% 5%;
+}
+
+/* Change the color of links on hover */
+#main-menu a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Style the "active" element to highlight the current page */
+#main-menu a.active {
+  background-color: #2196f3;
+  color: white;
+}
+
+#search {
+  max-width: 20%;
+  margin-right: 5%;
+}
+
+#search form {
+  color: #555;
+  display: flex;
+  padding: 2px;
+  border: 1px solid transparent;
+  border-radius: 5px;
+}
+
+input[type="search"] {
+  background: #bbb;
+  padding: 7px 8px;
+  font-size: 14px;
+  color: inherit;
+  border: 1px solid #bbb;
+  border-radius: inherit;
+}
+
+input[type="search"]::placeholder {
+  color: #bbb;
+}
+
+#search button[type="submit"] {
+  text-indent: -999px;
+  overflow: hidden;
+  width: 40px;
+  margin-left: -50%;
+  border: 1px solid transparent;
+  border-radius: inherit;
+  background: transparent url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' class='bi bi-search' viewBox='0 0 16 16'%3E%3Cpath d='M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z'%3E%3C/path%3E%3C/svg%3E") center no-repeat;
+  cursor: pointer;
+  opacity: 0.7;
+}
+
+#search button[type="submit"]:hover {
+  opacity: 1;
+}
+
+input[type="search"]:focus {
+  background-color: white;
+}
+
+/* When the screen is less than 600px wide, stack the links and the search field vertically instead of horizontally */
+/*@media screen and (max-width: 600px) {
+  #main-menu a {
+    float: none;
+    display: block;
+    text-align: left;
+    width: 100%;
+    margin: 0;
+    padding: 14px;
+  }
+  header input[type=text] {
+    border: 1px solid #ccc;
+  }
+}*/
+/* End of Header, begining of Cover */
+
+#cover {
+  height: 950px;
+  margin-top: -90px;
+  padding-left: 75px;
+  background-image: url(images/coverbg.png);
+  position: relative;
+  z-index: -10;
+}
+
+#covertext {
+  width: 40%;
+  padding-top: 300px;
+}
+
+#cover h2,
+#cover h3,
+#cover button,
+#cover p {
+  padding: 20px 0;
+}
+
+#cover h1 {
+  color: #deb37e;
+  text-shadow: 2px -1px lightgray;
+}
+
+#cover h3 {
+  color: #54524f;
+  font-style: italic;
+}
+
+#cover button {
+  background-color: white;
+  border: 2px whitesmoke solid;
+  border-radius: 20px;
+  padding: 1% 5%;
+  color: #776c64;
+  font-size: large;
+  font-weight: bold;
+}
+
+#cover p {
+  color: #54524f;
+  font-style: italic;
+}
+
+#coverbottom {
+  height: 150px;
+  background-image: url(images/coverbottom.png);
+  margin-top: -150px;
+}
+
+#portfolio {
+  background-image: url(images/shadow.png);
+  background-position: left bottom;
+  padding: 20px 0px;
+  background-size: 50%;
+}
+
+#letsgo h1 {
+  text-align: center;
+  padding: 10px 0px;
+  color: #e2a355;
+}
+
+#letsgo p {
+  text-align: center;
+  padding: 10px 0px;
+  color: #7f7770;
+}
+
+#showcase {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  column-gap: 50px;
+  margin: 20px;
+}
+
+.column {
+  background-color: #7f7770;
+  padding-bottom: 20px;
+  width: 20%;
+}
+
+.showcase-desc {
+  padding: 10px 10px;
+}
+
+#more {
+  text-align: center;
+  margin: 10% 0;
+}
+
+#more button {
+  background-color: #7f7770;
+  border: 2px #7f7770 solid;
+  border-radius: 20px;
+  padding: 10px 25px;
+  letter-spacing: 2px;
+
+}
+
+#readmore {
+  padding: 20px 0px;
+}
+
+#readmore1 {
+  display: inline-flex;
+  float: left;
+}
+
+#readmore1 div {
+  width: 50%;
+}
+
+#readmore1 img {
+  height: 100%;
+}
+
+#readmore1-desc {
+  background-color: #7f7770;
+  padding: 100px 0px 20px 20px;
+}
+
+#readmore1-desc h2,
+#readmore1-desc p,
+#readmore1-desc button,
+#readmore2-desc h2,
+#readmore2-desc p,
+#readmore2-desc button {
+  margin: 10%;
+  padding: auto;
+}
+
+#readmore1-desc button,
+#readmore2-desc button {
+  border-radius: 20px;
+  border: 2px #e2a355 solid;
+  padding: 10px 30px;
+  background-color: #e2a355;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: bold;
+}
+
+#readmore2 {
+  display: inline-flex;
+  float: left;
+}
+
+#readmore2 div {
+  width: 50%;
+}
+
+#readmore2 img {
+  height: 100%;
+}
+
+#readmore2-desc {
+  background-color: #deb37e;
+  padding: 100px 0px 20px 50px;
+}
+
+#hiking-desc {
+  background-image: url(images/shadow.png);
+  background-color: #7f7770;
+  padding: 200px 20px;
+  text-align: center;
+  margin: -45px 0px;
+}
+
+#hiking-desc p {
+  padding: 20px;
+  color: #dbdbdb;
+}
+
+#hiking-bottom {
+  margin: -70px 0px;
+}
+
+#xplore {
+  background-image: url(images/xplore-bg.png);
+  position: relative;
+  z-index: -1;
+  padding: 35% 15% 20% 60%;
+  margin-top: -50px;
+  height: 1200px;
+}
+
+#xplore :first-of-type{
+  text-align: right;
+  color: #deb37e;
+  font-style: italic;
+  text-transform: uppercase;
+  text-shadow: 5px 0px gray;
+  letter-spacing: 5px;
+}
+
+#xplore :last-of-type {
+  text-align: right;
+  color: #54524f;
+  font-style: italic;
+  text-transform: uppercase;
+  text-shadow: 2px 0px gray;
+  letter-spacing: 5px;
+}
+
+#xplore-bottom {
+  margin-top: -250px;
+}
+
+#xplore-pack {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  column-gap: 50px;
+  padding: 20px 20px 80px;
+}
+
+#xplore-packs {
+  width: 20%;
+}
+
+#xplore-packs h3 {
+  color: #deb37e;
+  line-height: 2;
+}
+
+#xplore-packs p {
+  color: #333d42;
+}
+
+#quote-text {
+  text-align: center;
+  background: url(images/shadow-reverse.png) no-repeat 
+              right 0;
+  background-size: 30%;
+  height: 600px;
+  padding-top: 10%;
+  }
+
+#quote-text img {
+  width: 50%;
+  transform: scaleX(-1);
+  padding-top: 50%;
+  margin-right: -15%;
+}
+
+#quote-text h1,
+#quote-text h3,
+#quote-text p {
+  padding: 10px 0;
+  color: black;
+}
+
+#quote-bottom{
+    margin-top: -350px;
+    position: relative;
+    z-index: -1
+}
+
+#subscription {
+  background-color: #deb37f;
+  margin: -10% 0%;
+  padding: 20%;
+  text-align: center;
+  position: relative;
+  z-index: -2;
+}
+
+#subscription p{
+  color: #7f7770;
+  padding: 5% 0%;
+  text-align: center;
+}
+
+#subscription form {
+  color: #555;
+  display: flex;
+  border: 1px solid transparent;
+  border-radius: 20px;
+}
+
+input[type="email"] {
+  background: white;
+  margin: 10% 10%;
+  padding: 7px 8px;
+  font-size: 14px;
+  border: 1px solid #bbb;
+  border-radius: 20px;
+  width: 50%;
+}
+
+input[type="email"]::placeholder {
+  color: #bbb;
+}
+
+#subscription button[type="submit"] {
+  margin: 10% 0%;
+  overflow: hidden;
+  width: fit-content;
+  padding: 0% 5%;
+  margin-left: -20%;
+  border: 1px solid transparent;
+  border-radius: inherit;
+  cursor: pointer;
+  background-color: #54524f;
+}
+
+#subscription button[type="submit"]:hover {
+  background-color: #e2a355;
+  color: #000;
+}
+
+input[type="email"]:focus {
+  background-color: white;
+}
+
+#quote-bottom h2 {
+  padding: 100px 100px 30px;
+
+}
+
+footer{
+  display: inline-flex;
+  flex-direction: row;
+  background-color: #54524f;
+  background-repeat: no-repeat;
+  background-size: contain;
+  padding: 20% 10%;
+  column-gap: 10%;
+  line-height: 2;
+  font-weight: lighter;
+  position: relative;
+  z-index: -1;
+  margin-top: -5%;
+}
+
+#column1{
+  display: inline-flex;
+  flex-direction: row;
+  float: left;
+  width: 40%;
+  flex-direction: column;
+  color: #7f7770;
+}
+
+#column1 img{
+  display: inline-flex;
+  flex-direction: row;
+  width: fit-content;
+  padding-top: 5%;
+  color: #7f7770;
+}
+
+#column2, #column3, #column4{
+  width: 20%;
+}
