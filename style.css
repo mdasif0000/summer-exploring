@@ -43,6 +43,8 @@ body {
   height: 190px;
   display: flex;
   flex-direction: row;
+  position: relative;
+  z-index: 1;
 }
 
 /* Create columns that floats next to each other */
@@ -158,8 +160,7 @@ input[type="search"]:focus {
   padding-left: 75px;
   background-image: url(images/coverbg.png);
   position: relative;
-  z-index: -10;
-}
+  }
 
 #covertext {
   width: 40%;
@@ -201,6 +202,7 @@ input[type="search"]:focus {
   height: 150px;
   background-image: url(images/coverbottom.png);
   margin-top: -150px;
+  position: relative;
 }
 
 #portfolio {
