@@ -190,8 +190,7 @@ input[type="search"]:focus {
   padding: 1% 5%;
   color: #776c64;
   font-size: large;
-  font-weight: bold;
-}
+  }
 
 #cover p {
   color: #54524f;
@@ -295,7 +294,6 @@ input[type="search"]:focus {
   background-color: #e2a355;
   text-transform: uppercase;
   letter-spacing: 2px;
-  font-weight: bold;
 }
 
 #readmore2 {
